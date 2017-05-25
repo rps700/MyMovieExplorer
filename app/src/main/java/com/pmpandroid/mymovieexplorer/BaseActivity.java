@@ -23,6 +23,7 @@ import android.support.v7.app.AppCompatActivity;
 import com.pmpandroid.mymovieexplorer.utils.DynamicOrientation;
 
 import butterknife.ButterKnife;
+import dagger.android.AndroidInjection;
 
 /**
  * Base Activity for all classes
@@ -33,6 +34,7 @@ public class BaseActivity extends AppCompatActivity {
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         DynamicOrientation.setOrientationFromResources(this);
+        AndroidInjection.inject(this);
         super.onCreate(savedInstanceState);
     }
 
