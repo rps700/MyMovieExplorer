@@ -14,4 +14,6 @@
     <string name="permission_rationale">"Contacts permissions are needed for providing email
         completions."
     </string>
+    <string name="base_url">http://api.themoviedb.org/3/</string>
+    <string name="api_key">96e15158395f0b05d7d2a3c1e181dd32</string>
 </resources>
